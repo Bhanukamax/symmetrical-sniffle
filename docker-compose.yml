@@ -4,8 +4,8 @@ services:
 
   backend:
     build: ./backend
-    volumes:
-      - ./backend:/usr/src/backend
+    #volumes:
+      #- ./backend:/usr/src/backend
     ports:
       - 4000:4000
     depends_on:
@@ -19,8 +19,8 @@ services:
 
   frontend:
     build: ./frontend
-    volumes:
-      - ./frontend:/usr/src/frontend
+    #volumes:
+      #- ./frontend:/usr/src/frontend
     ports:
       - 3000:3000
     depends_on:

@@ -3,8 +3,8 @@ WORKDIR /usr/src/frontend
 COPY package.json .
 COPY package-lock.json .
 RUN mkdir -p node_modules
-RUN npm install
 COPY . .
+RUN npm install
 EXPOSE 3000
 CMD ["npm", "run", "start"]
 
